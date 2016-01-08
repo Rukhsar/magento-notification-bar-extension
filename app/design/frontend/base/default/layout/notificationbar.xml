@@ -1,0 +1,19 @@
+<!--
+/**
+ * @category   Rukhsar
+ * @package    Rukhsar_NotificationBar
+ * @author     Rukhsar Manzoor (rukhsar.man@gmail.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <block type="notificationbar/html_styles" name="notification_bar_style" as="notification_bar_style" template="notificationbar/html/styles.phtml" />
+        </reference>
+        <reference name="after_body_start">
+            <block type="notificationbar/html_notifications" name="notificationbar_notifications" template="notificationbar/html/notifications.phtml" />
+        </reference>
+    </default>
+</layout>
